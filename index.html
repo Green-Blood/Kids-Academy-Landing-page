@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
           integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
           crossorigin="anonymous"/>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Custom Theme files -->
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 <div id="home" class="header">
@@ -78,7 +77,7 @@
             </div>
             <div class="col-12 col-lg-2  about-box">
                 <img src="images/5.png">
-                <h6>Сфера IT и её перспективы</h6>
+                <h6>Сфера Айти и её перспективы</h6>
                 <p>Начальный старт информатики, дизайна и многое другое.</p>
             </div>
         </div>
@@ -88,8 +87,8 @@
     <div class="row justify-content-around ready">
         <div class="col-lg-4 col-12"><h5>Получить бесплатный урок</h5></div>
         <div class="col-lg-2 col-12">
-            <a href="index.html"> <button type="submit"> Получить <i class=" margin-left fas fa-arrow-right"></i></button></a>
-            </h5></div>
+            <a href="#home"  > <button type="submit"> Получить <i class=" margin-left fas fa-arrow-right"></i></button></a>
+             </div>
     </div>
 </div>
 
@@ -151,7 +150,33 @@
 
 
 </body>
-<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
 <!-- //for bootstrap working -->
 <script src="js/bootstrap.js"></script>
 </html>
