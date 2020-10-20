@@ -270,24 +270,33 @@ input::placeholder {
         font-size: 14px;
     }
 
+
+    .contact-right p {
+        margin-left: 40%;
+    }
+
     #home {
         min-height: 0;
         max-height: 500px;
     }
-    .about{
-        margin-top: 70%;
+
+    .about {
+        margin-top: 60%;
     }
-    .social{
+
+    .social {
         text-align: center;
     }
-    .social .fab{
+
+    .social .fab {
         margin-right: 10%;
     }
 
     .about-box img {
         width: 10%;
     }
-    .contact-right{
+
+    .contact-right {
         margin-top: 25%;
         background: #fff;
     }
@@ -303,40 +312,78 @@ input::placeholder {
     .contact-right h4 {
         text-align: center;
     }
-    .ready h5{
+
+    .ready h5 {
         text-align: center;
     }
-    .ready button[type=submit]
-    {
+
+    .ready button[type=submit] {
         margin-left: 15%;
     }
 
-    .logo2{
+    .logo2 {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 25%;
     }
 
-
+    .about-box {
+        margin-right: 0;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        padding-bottom: 1.75em;
+    }
+    .about-box p{
+       margin-top: 1em;
+    }
 
 
 }
+
 @media screen and (max-width: 426px) {
-    .logo2{
+
+
+    #home {
+        min-height: 0;
+        max-height: 400px;
+    }
+    .about {
+        margin-top: 80%;
+    }
+    .contact-right{
+        margin-top: 40%;
+    }
+
+    .about-box img{
+        width: 20%;
+    }
+
+    .registration {
+        line-height: 36px;
+    }
+
+    .contact-right p {
+        margin-left: 30%;
+    }
+
+    .logo2 {
         margin-left: 20%;
         padding: 5%;
         width: 50%;
     }
-    .footer{
+
+    .footer {
         font-size: 0.7em;
     }
-    .footer ul{
+
+    .footer ul {
         margin: 0;
         padding: 0;
 
     }
-    .center{
+
+    .center {
         margin-left: 80%;
     }
 }
