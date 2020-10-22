@@ -5,7 +5,7 @@ html, body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -18,12 +18,13 @@ html, body {
     -ms-background-size: cover;
     min-height: 700px;
     position: relative;
+
 }
 
 .social {
 
     float: bottom;
-    margin-top: 10%;
+    margin-top: 12.5%;
     margin-left: 10%;
     font-size: 2em;
 }
@@ -44,7 +45,7 @@ html, body {
     font-style: normal;
     font-weight: 500;
     margin-top: 5%;
-    margin-left: 25%;
+    justify-content: center;
     line-height: 28px;
     font-size: 1em;
     /* identical to box height, or 133% */
@@ -72,11 +73,14 @@ html, body {
 
 .registration {
     color: #2F2F2F;
-    margin-top: 0.25em;
+
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5em;
-    line-height: 56px;
+    margin-top: 1em;
+    margin-left: 0;
+    font-size: 3em;
+    line-height: 1em;
+
 }
 
 .contact-right {
@@ -92,11 +96,13 @@ html, body {
     font-weight: bold;
     font-size: 1.5em;
     line-height: 37px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 .contact-right input {
     width: 100%;
-    padding: 0.4em;
+    padding: 0.6em;
     margin-bottom: 0.9375em;
 
     background: #FFFFFF;
@@ -118,6 +124,10 @@ html, body {
     color: rgba(55, 71, 79, 0.721569);
 }
 
+.contact-right input::placeholder {
+    font-size: 1em;
+}
+
 .contact-right button[type=submit] {
     width: 70%;
     margin-left: 15%;
@@ -128,11 +138,11 @@ button[type=submit] {
 
     background: #304EA0;
     border-radius: 11px;
+    padding: 0.5em;
 
     font-style: normal;
     font-weight: 500;
 
-    font-size: 0.9em;
     line-height: 40px;
     /* identical to box height, or 182% */
 
@@ -177,20 +187,17 @@ input::placeholder {
     border-radius: 15px;
     margin-right: 2em;
     margin-bottom: 4em;
+    padding-bottom: 0.5em;
 }
 
 .about-box img {
     margin: 1em 0 1em 0.6em;
-    width: 25%;
     height: auto;
 }
 
-.about-box h6 {
+.about-box h5 {
     font-style: normal;
     font-weight: bold;
-
-    font-size: 1em;
-    line-height: 20px;
     /* identical to box height, or 154% */
     color: #37474F;
     margin-left: 0.7em;
@@ -203,8 +210,8 @@ input::placeholder {
     font-weight: 500;
     margin-left: 1em;
     margin-bottom: 1em;
-    font-size: 0.7em;
-    line-height: 20px;
+    font-size: 0.85em;
+
     /* or 175% */
 
     letter-spacing: 0.444444px;
@@ -239,7 +246,7 @@ input::placeholder {
 
 .logo2 {
     width: 6.5%;
-    margin-left: 7.5%;
+    margin-left: 10%;
     margin-bottom: 1.5%;
 }
 
@@ -266,14 +273,38 @@ input::placeholder {
     line-height: 32px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 1921px) {
+    #home {
+        min-height: 1000px;
+        padding-bottom: 5em;
+    }
+
+    .social {
+        margin-top: 15%;
+    }
+
     html, body {
-        font-size: 14px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1919px) {
+    #home {
+        min-height: 700px;
+
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    html, body {
+        font-size: 16px;
     }
 
 
-    .contact-right p {
-        margin-left: 40%;
+    .logo {
+        margin-left: 15%;
+        width: 50%;
     }
 
     #home {
@@ -335,8 +366,9 @@ input::placeholder {
         margin-bottom: 0.5em;
         padding-bottom: 1.75em;
     }
-    .about-box p{
-       margin-top: 1em;
+
+    .about-box p {
+        margin-top: 1em;
     }
 
 
@@ -345,28 +377,44 @@ input::placeholder {
 @media screen and (max-width: 426px) {
 
 
+    .service-head h5 {
+        padding-bottom: 0;
+    }
+
+    .social {
+        margin-top: 5%;
+    }
+
     #home {
         min-height: 0;
         max-height: 400px;
+        padding-bottom: 30em;
     }
+
     .about {
         margin-top: 80%;
     }
-    .contact-right{
+
+    .about-box {
+        padding-bottom: 1em;
+    }
+
+    .container-fluid {
+        padding-bottom: 1em;
+    }
+
+    .contact-right {
         margin-top: 40%;
     }
 
-    .about-box img{
-        width: 20%;
+    .about-box img {
+        width: 15%;
     }
 
     .registration {
         line-height: 36px;
     }
 
-    .contact-right p {
-        margin-left: 30%;
-    }
 
     .logo2 {
         margin-left: 20%;
@@ -374,9 +422,6 @@ input::placeholder {
         width: 50%;
     }
 
-    .footer {
-        font-size: 0.7em;
-    }
 
     .footer ul {
         margin: 0;
@@ -388,4 +433,15 @@ input::placeholder {
         margin-left: 80%;
     }
 }
+
+@media screen and (max-width: 321px) {
+    #home {
+        padding-bottom: 35em;
+    }
+
+    .footer {
+        font-size: 0.7em;
+    }
+}
+
 
